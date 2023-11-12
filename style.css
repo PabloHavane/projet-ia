@@ -44,6 +44,42 @@ a:hover {
   text-decoration: underline;
 }
 
+body {
+  font-family: Arial, sans-serif; /* Choisis une police qui correspond à la maquette */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 20px; /* Ajuste la marge en fonction de la maquette */
+}
+
+h1 {
+  color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
+}
+
+/* Ajoute ce style pour aligner les éléments de manière horizontale */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Assure-toi que l'image ne dépasse pas la largeur du conteneur */
+}
+
+.learning-list {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime le padding par défaut de la liste */
+}
+
+/* Style supplémentaire pour séparer les éléments de la liste */
+.learning-list li {
+  margin-bottom: 8px;
+}
+
+
 footer {
   width: 100%;
   height: 50px;
