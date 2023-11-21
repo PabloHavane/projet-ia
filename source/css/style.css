@@ -80,6 +80,24 @@ h1 {
   margin-bottom: 8px;
 }
 
+.learning-section {
+  margin-left: 30px; /* Ajuste la marge entre les deux sections */
+}
+
+.resources-table {
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures de la table */
+}
+
+.resources-table td {
+  border: 1px solid #ddd; /* Ajoute des bordures aux cellules */
+  padding: 8px;
+  text-align: left;
+}
+
+.resources-table tr:first-child {
+  font-weight: bold; /* Met en gras la première ligne (titres) */
+}
 
 footer {
   width: 100%;
