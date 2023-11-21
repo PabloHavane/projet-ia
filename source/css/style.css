@@ -5,6 +5,8 @@ body {
   padding: 0;
 }
 
+/* Style du header et de ces enfants */
+
 header {
   background-color: #333;
   color: #fff;
@@ -67,6 +69,8 @@ nav ul li a {
   display: block;
 }
 
+/* Style du main et de ces enfants */
+
 main {
   margin: 20px; /* Ajuste la marge en fonction de la maquette */
 }
@@ -78,12 +82,17 @@ h1 {
 /* Ajoute ce style pour aligner les éléments de manière horizontale */
 .content-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Change la direction des éléments à la verticale */
+  /* align-items: center; */
+}
+
+.first-part {
+  display: flex; /* Met la div en display flex */
 }
 
 .image-container img {
   max-width: 100%; /* Assure-toi que l'image ne dépasse pas la largeur du conteneur */
+  margin-right: 20px; /* Ajoute une marge entre l'image et la liste */
 }
 
 .learning-list {
@@ -97,7 +106,7 @@ h1 {
 }
 
 .learning-section {
-  margin-left: 30px; /* Ajuste la marge entre les deux sections */
+  margin-top: 20px;/ * Ajuste la marge entre les deux sections */
 }
 
 .resources-table {
@@ -114,6 +123,8 @@ h1 {
 .resources-table tr:first-child {
   font-weight: bold; /* Met en gras la première ligne (titres) */
 }
+
+/* Style du footer et de ces enfants */
 
 footer {
   background-color: #333;
