@@ -6,42 +6,67 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- Header bidon en attendant celui de Maxence -->
   <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo de l'IUT de Toulouse">
-      </a>
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo de l'Université Paul Sabatier">
-      </a>
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo du BUT Informatique">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">Présentation du BUT Informatique</a></li>
-          <li><a href="competence.html">Blocs de compétences</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="logo-container">
+        <div class="left-logos">
+            <img src="../img/iut_logo.png" alt="IUT Toulouse Logo">
+            <img src="../img/university_logo.png" alt="Université Paul Sabatier Logo">
+        </div>
+        <div class="right-logo">
+            <img src="../img/but_informatique_logo.png" alt="BUT Informatique Logo">
+        </div>
+    </div>
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+                <li><a href="../accueil.html">Accueil</a></li>
+                <li><a href="../presentation.html">Présentation du BUT Informatique</a></li>
+                <li class="dropdown">
+                    <a href="#">Blocs de compétences</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../competence1.html">Compétence 1</a></li>
+                        <li><a href="../competence2.html">Compétence 2</a></li>
+                        <li><a href="../competence3.html">Compétence 3</a></li>
+                        <li><a href="../competence4.html">Compétence 4</a></li>
+                        <li><a href="../competence5.html">Compétence 5</a></li>
+                        <li><a href="../competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
 
-  <body>
-    <h1>Index</h1>
-  </body>
+  <h1>Index</h1>
 
-  <!-- Footer bidon en  attendant celui de Maxence -->
   <footer>
-    <div class="container">
-      <p>Copyright © 2023 IUT de Toulouse</p>
-      <ul>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
-      </ul>
+    <div class="footer-left">
+        <h4>Plan du Site</h4>
+        <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="./presentation">Présentation du BUT</a></li>
+            <li><a href="./competence1">Compétence 1</a></li>
+            <li><a href="./competence2">Compétence 2</a></li>
+            <li><a href="./competence3">Compétence 3</a></li>
+            <li><a href="./competence4">Compétence 4</a></li>
+            <li><a href="./competence5">Compétence 5</a></li>
+            <li><a href="./competence6">Compétence 6</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-middle">
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+    </div>
+
+    <div class="footer-right">
+        <h4>Notre Groupe</h4>
+        <p>Milieu Offensif Central Corp.° (MOC)</p>
+        <p>Maxence Lagourgue</p>
+        <p>Oscar Garcia</p>
+        <p>Charif Abdesselam</p>
     </div>
   </footer>
+  
 </body>
 </html>
