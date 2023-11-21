@@ -1,6 +1,8 @@
 body {
-  font-family: sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -8,6 +10,8 @@ header {
   height: 100px;
   background-color: #ffffff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px;
 }
 
 .container {
@@ -42,12 +46,6 @@ li {
 a:hover {
   color: #000000;
   text-decoration: underline;
-}
-
-body {
-  font-family: Arial, sans-serif; /* Choisis une police qui correspond à la maquette */
-  margin: 0;
-  padding: 0;
 }
 
 main {
@@ -86,4 +84,110 @@ footer {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-logos img {
+  max-height: 50px;
+}
+
+.right-logo img {
+  max-height: 50px;
+}
+
+.navigation-menu {
+  margin-top: 10px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Les éléments occupent toute la largeur et sont espacés équitablement */
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+  position: relative; /* Position relative pour les éléments contenant un élément positionné absolument */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: 100%; /* La largeur du menu déroulant est égale à la largeur de l'élément parent */
+  left: 0;
+  top: 100%; /* Le menu déroulant apparaît en dessous de l'élément parent */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 30%;
+}
+
+.footer-middle {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-left h4,
+.footer-right h4 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
