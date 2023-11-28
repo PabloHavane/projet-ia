@@ -1,90 +1,18 @@
 body {
+  font-family: sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
 }
 
+/* Style du header et de ces enfants */
+
 header {
-  width: 100%;
-  height: 100px;
-  background-color: #ffffff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  background-color: #333;
   color: #fff;
   padding: 10px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
-
-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-a:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-
-main {
-  margin: 20px; /* Ajuste la marge en fonction de la maquette */
-}
-
-h1 {
-  color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
-}
-
-/* Ajoute ce style pour aligner les éléments de manière horizontale */
-.content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.image-container img {
-  max-width: 100%; /* Assure-toi que l'image ne dépasse pas la largeur du conteneur */
-}
-
-.learning-list {
-  list-style-type: none; /* Supprime les puces de la liste */
-  padding: 0; /* Supprime le padding par défaut de la liste */
-}
-
-/* Style supplémentaire pour séparer les éléments de la liste */
-.learning-list li {
-  margin-bottom: 8px;
-}
-
-
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-}
 .logo-container {
   display: flex;
   justify-content: space-between;
@@ -140,10 +68,123 @@ nav ul li a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-body {
-  margin: 0;
-  padding: 0;
+
+/* Style du main et de ces enfants */
+
+main {
+  margin: 20px; /* Ajuste la marge en fonction de la maquette */
 }
+
+h1 {
+  color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
+}
+
+/* Style de la page compétence */
+
+/* Ajoute ce style pour aligner les éléments de manière horizontale */
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Change la direction des éléments à la verticale */
+  /* align-items: center; */
+}
+
+.first-part {
+  display: flex; /* Met la div en display flex */
+}
+
+.image-container img {
+  max-width: 100%; /* Assure-toi que l'image ne dépasse pas la largeur du conteneur */
+  margin-right: 20px; /* Ajoute une marge entre l'image et la liste */
+}
+
+.learning-list {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime le padding par défaut de la liste */
+}
+
+/* Style supplémentaire pour séparer les éléments de la liste */
+.learning-list li {
+  margin-bottom: 8px;
+}
+
+.learning-section {
+  margin-top: 20px; /* Ajuste la marge entre les deux sections */
+}
+
+.resources-table {
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures de la table */
+}
+
+.resources-table td {
+  border: 1px solid #ddd; /* Ajoute des bordures aux cellules */
+  padding: 8px;
+  text-align: left;
+}
+
+.resources-table tr:first-child {
+  font-weight: bold; /* Met en gras la première ligne (titres) */
+}
+
+/* Style supplémentaire pour séparer les sections de la page */
+.sae-section {
+  margin-top: 20px;
+}
+
+.sae-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sae-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.sae-table tr:first-child td:first-child {
+  font-weight: bold; /* Met en gras toute la première colonne de la première ligne */
+}
+
+.sae-table td:nth-child(odd) {
+  font-weight: bold; /* Met en gras toutes les cellules des colonnes impaires (première colonne) */
+}
+
+/* Style supplémentaire pour séparer les sections de la page */
+.resources-section {
+  margin-top: 20px;
+}
+
+.resource {
+  margin-bottom: 30px;
+}
+
+.resource-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resource-header code {
+  margin-right: 10px;
+}
+
+.resource h3 {
+  margin: 0;
+}
+
+.resource-apprentissages,
+.resource-descriptif {
+  margin-top: 10px;
+}
+
+.resource-apprentissages ul,
+.resource-descriptif p {
+  margin: 0;
+}
+
+
+/* Style du footer et de ces enfants */
 
 footer {
   background-color: #333;
@@ -174,20 +215,20 @@ footer {
   margin: 0;
 }
 
-ul {
+footer ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+footer li {
   margin-bottom: 5px;
 }
 
-a {
+footer a {
   color: #fff;
   text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
   text-decoration: underline;
 }
