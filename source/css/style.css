@@ -79,6 +79,58 @@ h1 {
   color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
 }
 
+/* Style de la page contact */
+
+#contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #d9534f; /* Rouge IUT */
+  color: #fff;
+  border: none;
+  cursor: not-allowed;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.right-section {
+  flex: 1;
+  margin-left: 20px;
+}
+
+address {
+  font-style: normal;
+}
+
 /* Style de la page compétence */
 
 /* Ajoute ce style pour aligner les éléments de manière horizontale */
