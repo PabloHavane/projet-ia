@@ -3,14 +3,67 @@ body {
     margin: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #333;
 }
 
 .bloc-vide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f5f5f5;
 }
+
+/* Nouvelle classe pour le contenu du bloc */
+.contenu-bloc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Nouvelle classe pour l'explication */
+.explication {
+    width: 45%; /* Ajuste la largeur selon tes préférences */
+}
+
+/* Style pour le tableau */
+/* Style pour le tableau */
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Nouvelle classe pour les entêtes spéciales */
+.entete-special,
+th.entete-special {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+
+/* Media query pour les petits écrans */
+@media (max-width: 600px) {
+    .contenu-bloc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explication, table {
+        width: 100%;
+        margin: 0;
+    }
+}
+/* Réinitialise la marge */
