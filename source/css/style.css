@@ -79,6 +79,8 @@ h1 {
   color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
 }
 
+/* Style de la page compétence */
+
 /* Ajoute ce style pour aligner les éléments de manière horizontale */
 .content-wrapper {
   display: flex;
@@ -106,7 +108,7 @@ h1 {
 }
 
 .learning-section {
-  margin-top: 20px;/ * Ajuste la marge entre les deux sections */
+  margin-top: 20px; /* Ajuste la marge entre les deux sections */
 }
 
 .resources-table {
@@ -123,6 +125,31 @@ h1 {
 .resources-table tr:first-child {
   font-weight: bold; /* Met en gras la première ligne (titres) */
 }
+
+/* Style supplémentaire pour séparer les sections de la page */
+.sae-section {
+  margin-top: 20px;
+}
+
+.sae-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sae-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.sae-table tr:first-child td:first-child {
+  font-weight: bold; /* Met en gras toute la première colonne de la première ligne */
+}
+
+.sae-table td:nth-child(odd) {
+  font-weight: bold; /* Met en gras toutes les cellules des colonnes impaires (première colonne) */
+}
+
 
 /* Style du footer et de ces enfants */
 
