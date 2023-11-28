@@ -6,55 +6,181 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- Header bidon en attendant celui de Maxence -->
   <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="images/Logo-IUT-TAC-UT3-2019.jpg" alt="Logo de l'IUT de Toulouse">
-      </a>
-      <a href="index.html">
-        <img src="images/logo-IUT-UT3-carre2019.jpg" alt="Logo de l'Université Paul Sabatier">
-      </a>
-      <a href="index.html">
-        <img src="images/logo-IUT-UT3-carre2019.jpg" alt="Logo du BUT Informatique">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="presentation-but-informatique.html">Présentation du BUT Informatique</a></li>
-          <li><a href="blocs-competences.html">Blocs de compétences</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="logo-container">
+        <div class="left-logos">
+            <img src="../../images/Logo-IUT-TAC-UT3-2019.jpg" alt="IUT Toulouse Logo">
+            <img src="../../images/logo-UT3_UFTMP.jpg" alt="Université Paul Sabatier Logo">
+        </div>
+        <div class="right-logo">
+            <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="BUT Informatique Logo">
+        </div>
+    </div>
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT Informatique</a></li>
+                <li class="dropdown">
+                    <a href="#">Blocs de compétences</a>
+                    <ul class="dropdown-content">
+                        <li><a href="competence.html">Compétence 1</a></li>
+                        <li><a href="../competence2.html">Compétence 2</a></li>
+                        <li><a href="../competence3.html">Compétence 3</a></li>
+                        <li><a href="../competence4.html">Compétence 4</a></li>
+                        <li><a href="../competence5.html">Compétence 5</a></li>
+                        <li><a href="../competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
-
 
      <!-- Contenu de la page -->
   <main>
     <h1>Compétence 1</h1>
     <!-- Ajoute ici les informations spécifiques à la compétence 1 -->
     <section class="content-wrapper">
-      <div class="image-container">
-          <img src="chemin/vers/image.png" alt="Description de l'image">
+      <!-- Première partie de la page -->
+      <h2>Apprentissages critiques</h2>
+
+      <div class="first-part">
+        <div class="image-container">
+          <img src="../../images/comp1-niv1.png" alt="Niveau de la compétence 1 : 'Développer des applications simples'">
+        </div>
+
+        <ul class="learning-list">
+          <li>Implémenter des conceptions simples</li>
+          <li>Élaborer des conceptions simples</li>
+          <li>Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+          <li>Développer des interfaces utilisateurs</li>
+          <!-- Ajoute d'autres éléments selon la maquette fournie par l'IUT -->
+        </ul>
       </div>
 
-      <ul class="learning-list">
-          <li>Apprentissage critique 1</li>
-          <li>Apprentissage critique 2</li>
-          <!-- Ajoute d'autres éléments selon la maquette fournie par l'IUT -->
-      </ul>
-  </section>
+      <!-- Deuxième partie de la page -->
+      <div class="learning-section">
+        <h2>Ressources et Coefficients</h2>
+
+        <table class="resources-table">
+            <tr>
+                <td>Ressources</td>
+                <td>Resource 1</td>
+                <td>Resource 2</td>
+                <td>Resource 3</td>
+            </tr>
+            <tr>
+                <td>Coefficients</td>
+                <td>Coefficient 1</td>
+                <td>Coefficient 2</td>
+                <td>Coefficient 3</td>
+            </tr>
+        </table>
+      </div>
+
+      <!-- Troisième partie de la page -->
+      <div class="sae-section">
+        <h2>SAE</h2>
+
+        <table class="sae-table">
+            <tr>
+                <td>Nom de la SAE</td>
+                <td>S1.01 Implémentation d'un besoin client</td>
+            </tr>
+            <tr>
+                <td>Compétence visée</td>
+                <td>Compétence 1 : Réaliser un développement d'application</td>
+            </tr>
+            <tr>
+                <td>Description des objectifs de la SAE et de la problématique professionnelle associée</td>
+                <td>En partant d'un besoin exprimé par un client, l'objectif est de réaliser une application qui répond à ce besoin. Cette SAE permet une première mise en pratique du développement d'une application en réponse à un besoin client.</td>
+            </tr>
+            <tr>
+                <td>Apprentissages clés couverts</td>
+                <td>C1 AC1 : Implémentation des conceptions simples, C1 AC3 : Réalisation des essais et validation des fonctionnalités en regard des spécifications</td>
+            </tr>
+            <tr>
+                <td>Heures de formation (cours TP inclus)</td>
+                <td>4h (dont 2h de TP)</td>
+            </tr>
+            <tr>
+                <td>Heures de projet dédiées (TP inclus)</td>
+                <td>12h</td>
+            </tr>
+            <tr>
+                <td>Liste des compétences mobilisées et combinées</td>
+                <td>R1.01 Initiation au développement</td>
+            </tr>
+            <tr>
+                <td>Type de livrable ou de production</td>
+                <td>Code de l'application, Traces d'exécution des jeux d'essais</td>
+            </tr>
+            <tr>
+                <td>Semestre</td>
+                <td>1</td>
+            </tr>
+        </table>
+      </div>
+
+      <!-- Quatrième partie de la page - Les ressources -->
+      <div class="resources-section">
+        <h2>Ressources</h2>
+
+        <!-- Première ressource -->
+        <div class="resource">
+            <div class="resource-header">
+                <code>Code de la ressource</code>
+                <h3>Nom de la ressource</h3>
+            </div>
+
+            <!-- Apprentissages critiques liés à la ressource -->
+            <div class="resource-apprentissages">
+                <h3>Apprentissages critiques</h3>
+                <ul>
+                    <li>Apprentissage critique 1</li>
+                    <li>Apprentissage critique 2</li>
+                    <!-- Ajoute d'autres éléments selon la maquette fournie par l'IUT -->
+                </ul>
+            </div>
+
+            <!-- Descriptif détaillé de la ressource -->
+            <div class="resource-descriptif">
+                <h3>Descriptif détaillé</h3>
+                <p>Texte détaillé sur la ressource...</p>
+            </div>
+        </div>
+        <!-- Ajoute d'autres ressources selon la maquette -->
+      </div>
+    </section>
   </main>
 
-  <!-- Footer bidon en  attendant celui de Maxence -->
   <footer>
-    <div class="container">
-      <p>Copyright © 2023 IUT de Toulouse</p>
-      <ul>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
-      </ul>
+    <div class="footer-left">
+        <h4>Plan du Site</h4>
+        <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="./presentation">Présentation du BUT</a></li>
+            <li><a href="./competence1">Compétence 1</a></li>
+            <li><a href="./competence2">Compétence 2</a></li>
+            <li><a href="./competence3">Compétence 3</a></li>
+            <li><a href="./competence4">Compétence 4</a></li>
+            <li><a href="./competence5">Compétence 5</a></li>
+            <li><a href="./competence6">Compétence 6</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-middle">
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+    </div>
+
+    <div class="footer-right">
+        <h4>Notre Groupe</h4>
+        <p>Milieu Offensif Central Corp.° (MOC)</p>
+        <p>Maxence Lagourgue</p>
+        <p>Oscar Garcia</p>
+        <p>Charif Abdesselam</p>
     </div>
   </footer>
 </body>
