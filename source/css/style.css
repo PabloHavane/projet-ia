@@ -150,6 +150,39 @@ h1 {
   font-weight: bold; /* Met en gras toutes les cellules des colonnes impaires (première colonne) */
 }
 
+/* Style supplémentaire pour séparer les sections de la page */
+.resources-section {
+  margin-top: 20px;
+}
+
+.resource {
+  margin-bottom: 30px;
+}
+
+.resource-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resource-header code {
+  margin-right: 10px;
+}
+
+.resource h3 {
+  margin: 0;
+}
+
+.resource-apprentissages,
+.resource-descriptif {
+  margin-top: 10px;
+}
+
+.resource-apprentissages ul,
+.resource-descriptif p {
+  margin: 0;
+}
+
 
 /* Style du footer et de ces enfants */
 
@@ -182,20 +215,20 @@ footer {
   margin: 0;
 }
 
-ul {
+footer ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+footer li {
   margin-bottom: 5px;
 }
 
-a {
+footer a {
   color: #fff;
   text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
   text-decoration: underline;
 }
