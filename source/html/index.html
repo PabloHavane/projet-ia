@@ -6,41 +6,117 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- Header bidon en attendant celui de Maxence -->
   <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo de l'IUT de Toulouse">
-      </a>
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo de l'Université Paul Sabatier">
-      </a>
-      <a href="index.html">
-        <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="Logo du BUT Informatique">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">Présentation du BUT Informatique</a></li>
-          <li><a href="competence.html">Blocs de compétences</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="logo-container">
+        <div class="left-logos">
+            <img src="../../images/Logo-IUT-TAC-UT3-2019.jpg" alt="IUT Toulouse Logo">
+            <img src="../../images/logo-UT3_UFTMP.jpg" alt="Université Paul Sabatier Logo">
+        </div>
+        <div class="right-logo">
+            <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="BUT Informatique Logo">
+        </div>
+    </div>
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT Informatique</a></li>
+                <li class="dropdown">
+                    <a href="#">Blocs de compétences</a>
+                    <ul class="dropdown-content">
+                        <li><a href="competence.html">Compétence 1</a></li>
+                        <li><a href="../competence2.html">Compétence 2</a></li>
+                        <li><a href="../competence3.html">Compétence 3</a></li>
+                        <li><a href="../competence4.html">Compétence 4</a></li>
+                        <li><a href="../competence5.html">Compétence 5</a></li>
+                        <li><a href="../competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
 
-  <body>
-    <h1>Index</h1>
-  </body>
+  <main>
+      <!-- Article 1: Historique du BUT -->
+      <div class="article-content">
+          <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie">
+              <img src="./img/DL_02_BUT.svg.png" alt="Image historique du BUT">
+          </a>
+          <div class="article-text">
+              <p>En 1965, quatre départements expérimentaux sont créés à Rouen (spécialité chimie), Nancy (spécialité biologie appliquée), Paris (spécialité électronique) et Toulouse (spécialité construction mécanique). Les méthodes d’enseignement et les objectifs employés préfiguraient la création officielle un an plus tard des Instituts universitaires de technologie.Le 7 janvier 1966, les Instituts universitaires de technologie sont créés (décret no 66-27).Le 13 septembre de la même année, une liste de 8 spécialités à enseigner en vue de l’obtention du diplôme universitaire de technologie est fixée par arrêté : Construction mécanique, Électronique, télécommunications et automatisme, Énergétique, électrotechnique, Informatique, Gestion des entreprises, Biologie appliquée, Chimie, civil.</p>
+              <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie">Source : Wikipedia</a>
+          </div>
+      </div>
+      <!-- Décorateur 1 -->
+      <div class="decorator"></div>
 
-  <!-- Footer bidon en  attendant celui de Maxence -->
+      <!-- Article 2: IUT Informatique Toulouse Rangueil -->
+      <div class="article-content">
+        <a href="https://iut.univ-tlse3.fr/">
+            <img src="./img/Facade_IUT_Rangueil_photo1-scaled.jpg" alt="Photo de l'IUT" class="accueil-image">
+        </a>
+        <div class="article-text">
+            <p>Créé en 1967, le département "INFORMATIQUE" (IUT "A" Paul Sabatier) propose plusieurs diplômes professionnalisants et accueille chaque année près de 500 étudiants. Plus de 6400 étudiant(e)s déjà diplômé(e)s. Portée par plus de 50 enseignants (titulaires et professionnels), son offre de formation s'exprime à travers des parcours très divers et porte sur le DUT "INFORMATIQUE", et les Licences professionnelles.</p>
+            <ul>
+                <li>IUT Département Informatique</li>
+                <li>133 B, avenue de Rangueil - BP 67701 - 31077 Toulouse cedex 4</li>
+                <li>Tél. : 05 62 25 87 73 / Fax : 05 62 25 87 75</li>
+            </ul>
+            <a href="https://iut-informatique.univ-tlse3.fr/bienvenue-au-departement-informatique-434480.kjsp?RH=1346858213868&RF=1339518859989">Source : Departement IUT Informatique</a>
+        </div>
+    </div>
+    
+      <!-- Décorateur 2 -->
+      <div class="decorator"></div>
+
+      <!-- Article 3: Liste des compétences -->
+      <div class="article">
+          <h2>Liste des compétences</h2>
+          <p>Insère ici le contenu de l'article sur la liste des compétences.</p>
+      </div>
+      <!-- Décorateur 3 -->
+      <div class="decorator"></div>
+
+      <!-- Article 4: Vie étudiante -->
+      <div class="article-content">
+          <div class="article-text">
+              <p>L'ATIDUT est l'association des étudiants du département informatique de l'IUT. Elle est basée dans une salle au 2ème étage du département (porte 202). L'ATIDUT organise toutes sortes d'activités permettant aux étudiants de s'intégrer au sein du département, de se rencontrer et de se divertir : Week-end d'intégration, Laser Quest, tournois de LAN, Sorties ski, Soirées,...</p>
+          </div>
+          <div class="col col-2 center">
+              <a href="https://www.iutpaulsab-sansfiltre.fr/ta-vie-a-liut/toulouse/vie-associative-et-sport/#filters">
+                  <img src="./img/images.jpg" alt="Photo IUT vie étudiante" class="accueil-image">
+              </a>
+          </div>
+      </div>
+  </main>
+
   <footer>
-    <div class="container">
-      <p>Copyright © 2023 IUT de Toulouse</p>
-      <ul>
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
-      </ul>
+    <div class="footer-left">
+        <h4>Plan du Site</h4>
+        <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="./presentation">Présentation du BUT</a></li>
+            <li><a href="./competence1">Compétence 1</a></li>
+            <li><a href="./competence2">Compétence 2</a></li>
+            <li><a href="./competence3">Compétence 3</a></li>
+            <li><a href="./competence4">Compétence 4</a></li>
+            <li><a href="./competence5">Compétence 5</a></li>
+            <li><a href="./competence6">Compétence 6</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-middle">
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+    </div>
+
+    <div class="footer-right">
+        <h4>Notre Groupe</h4>
+        <p>Milieu Offensif Central Corp.° (MOC)</p>
+        <p>Maxence Lagourgue</p>
+        <p>Oscar Garcia</p>
+        <p>Charif Abdesselam</p>
     </div>
   </footer>
 </body>

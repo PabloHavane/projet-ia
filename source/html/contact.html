@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétence</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <div class="left-logos">
+            <img src="../../images/Logo-IUT-TAC-UT3-2019.jpg" alt="IUT Toulouse Logo">
+            <img src="../../images/logo-UT3_UFTMP.jpg" alt="Université Paul Sabatier Logo">
+        </div>
+        <div class="right-logo">
+            <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="BUT Informatique Logo">
+        </div>
+    </div>
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT Informatique</a></li>
+                <li class="dropdown">
+                    <a href="#">Blocs de compétences</a>
+                    <ul class="dropdown-content">
+                        <li><a href="competence.html">Compétence 1</a></li>
+                        <li><a href="../competence2.html">Compétence 2</a></li>
+                        <li><a href="../competence3.html">Compétence 3</a></li>
+                        <li><a href="../competence4.html">Compétence 4</a></li>
+                        <li><a href="../competence5.html">Compétence 5</a></li>
+                        <li><a href="../competence6.html">Compétence 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+      <section id="contact">
+          <h2>Contactez-nous</h2>
+
+          <!-- Formulaire de contact -->
+          <form action="#" method="post">
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" required>
+
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+
+              <label for="email">Adresse e-mail :</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="button" disabled>Envoyer</button>
+          </form>
+
+          <!-- Partie renseignements -->
+          <div class="info-section">
+              <!-- Partie gauche : Photo de l'IUT -->
+              <div class="left-section">
+                  <img src="iut-photo.jpg" alt="IUT Photo">
+              </div>
+
+              <!-- Partie droite : Adresse et carte -->
+              <div class="right-section">
+                  <p>Adresse de l'IUT :</p>
+                  <address>
+                      Nom de l'IUT<br>
+                      Rue de l'IUT<br>
+                      Code postal, Ville
+                  </address>
+
+                  <img src="carte-iut.jpg" alt="Carte de l'IUT">
+              </div>
+          </div>
+      </section>
+  </main> 
+
+  <footer>
+    <div class="footer-left">
+        <h4>Plan du Site</h4>
+        <ul>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="./presentation">Présentation du BUT</a></li>
+            <li><a href="./competence1">Compétence 1</a></li>
+            <li><a href="./competence2">Compétence 2</a></li>
+            <li><a href="./competence3">Compétence 3</a></li>
+            <li><a href="./competence4">Compétence 4</a></li>
+            <li><a href="./competence5">Compétence 5</a></li>
+            <li><a href="./competence6">Compétence 6</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-middle">
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+    </div>
+
+    <div class="footer-right">
+        <h4>Notre Groupe</h4>
+        <p>Milieu Offensif Central Corp.° (MOC)</p>
+        <p>Maxence Lagourgue</p>
+        <p>Oscar Garcia</p>
+        <p>Charif Abdesselam</p>
+    </div>
+  </footer>
+</body>
+</html>
