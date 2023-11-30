@@ -66,4 +66,81 @@ th.entete-special {
         margin: 0;
     }
 }
+/* Ajoutez ce style dans votre fichier CSS */
+.competence-details {
+    border: 1px solid #ddd; /* Bordure pour chaque div de compétence */
+    margin-bottom: 10px; /* Espacement entre chaque div de compétence */
+    padding: 10px; /* Espacement interne */
+}
+
+.image-block img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de la div */
+}
+
+.resources-list {
+    margin-top: 10px; /* Espacement entre l'image et la liste de ressources */
+}
+
+.resource-item {
+    display: block; /* Affiche chaque ressource comme un bloc */
+    margin-bottom: 5px; /* Espacement entre chaque ressource */
+}
 /* Réinitialise la marge */
+
+.competence-details {
+    flex-basis: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-block img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.resources-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-item {
+    flex-basis: 30%; /* Trois ressources par ligne (ajustez selon vos besoins) */
+    border: 1px solid #ccc; /* Bordure de style bloc */
+    min-height: 60px; /* Hauteur minimale de 60px */
+    width: 20%; /* Largeur de 100px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px; /* Ajout d'un espacement entre les éléments */
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
+
+.competence-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajustez cet espacement selon vos préférences */
+}
+
+.competence-details {
+    /* Faites en sorte que chaque bloc prenne la largeur maximale */
+    width: 100%;
+    border: 1px solid #ccc; /* Ajoutez une bordure pour séparer les blocs */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.competence-details:nth-child(even) .image-block {
+    order: 1;
+}
+
+.competence-details:nth-child(odd) .image-block {
+    order: 2;
+}
