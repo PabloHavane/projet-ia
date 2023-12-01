@@ -18,20 +18,16 @@ h1, h2 {
     background-color: #f5f5f5;
 }
 
-/* Nouvelle classe pour le contenu du bloc */
 .contenu-bloc {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-/* Nouvelle classe pour l'explication */
 .explication {
-    width: 45%; /* Ajuste la largeur selon tes préférences */
+    width: 45%;
 }
 
-/* Style pour le tableau */
-/* Style pour le tableau */
 table {
     width: 100%;
 }
@@ -46,15 +42,12 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Nouvelle classe pour les entêtes spéciales */
 .entete-special,
 th.entete-special {
     font-weight: bold;
     background-color: #e0e0e0;
 }
 
-
-/* Media query pour les petits écrans */
 @media (max-width: 600px) {
     .contenu-bloc {
         flex-direction: column;
@@ -66,26 +59,6 @@ th.entete-special {
         margin: 0;
     }
 }
-/* Ajoutez ce style dans votre fichier CSS */
-.competence-details {
-    border: 1px solid #ddd; /* Bordure pour chaque div de compétence */
-    margin-bottom: 10px; /* Espacement entre chaque div de compétence */
-    padding: 10px; /* Espacement interne */
-}
-
-.image-block img {
-    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de la div */
-}
-
-.resources-list {
-    margin-top: 10px; /* Espacement entre l'image et la liste de ressources */
-}
-
-.resource-item {
-    display: block; /* Affiche chaque ressource comme un bloc */
-    margin-bottom: 5px; /* Espacement entre chaque ressource */
-}
-/* Réinitialise la marge */
 
 .competence-details {
     flex-basis: 45%;
@@ -94,13 +67,12 @@ th.entete-special {
     border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Ajustement à une colonne */
 }
 
-.image-block img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.competence-details h2 {
+    margin-bottom: 10px; /* Espacement entre le titre et le contenu */
 }
 
 .resources-list {
@@ -108,39 +80,43 @@ th.entete-special {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    /*Taille 70%*/
+    width: 70%;
 }
 
 .resource-item {
-    flex-basis: 30%; /* Trois ressources par ligne (ajustez selon vos besoins) */
-    border: 1px solid #ccc; /* Bordure de style bloc */
-    min-height: 60px; /* Hauteur minimale de 60px */
-    width: 20%; /* Largeur de 100px */
+    flex-basis: 30%;
+    border: 1px solid #ccc;
+    min-height: 60px;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 20px; /* Ajout d'un espacement entre les éléments */
+    margin: 20px;
+}
+/*Content container flex direction gauche à droite : rajouté*/
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Ajoutez d'autres styles selon vos besoins */
-
+.gauche /*direction de gauche à droite : rajouté*/
+{
+    flex-direction: row;
+}
+.droite /*direction de droite à gauche : rajouté*/
+{
+    flex-direction: row-reverse;
+}
 .competence-block {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Ajustez cet espacement selon vos préférences */
+    gap: 20px;
 }
-
-.competence-details {
-    /* Faites en sorte que chaque bloc prenne la largeur maximale */
-    width: 100%;
-    border: 1px solid #ccc; /* Ajoutez une bordure pour séparer les blocs */
-    padding: 10px;
-    box-sizing: border-box;
-}
-.competence-details:nth-child(even) .image-block {
-    order: 1;
-}
-
-.competence-details:nth-child(odd) .image-block {
-    order: 2;
+/*image largeur 30%*/
+.image-block{
+    width: 30%;
 }
