@@ -116,7 +116,7 @@ th.entete-special {
     flex-direction: column;
     gap: 20px;
 }
-/*image largeur 30%*/
+/*image largeur 30% : rajouté*/
 .image-block{
     width: 30%;
 }
