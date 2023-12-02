@@ -79,6 +79,55 @@ h1 {
   color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
 }
 
+/* Style de la page index */
+
+.article-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-content img {
+  width: 200px; /* Ajuste la largeur de l'image selon tes besoins */
+  margin-right: 20px;
+}
+
+.article-text {
+  flex: 1;
+}
+
+/* Style supplémentaire pour la section "Vie étudiante" */
+.article-content.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Style supplémentaire pour la section "Vie étudiante" */
+.article-content.reverse img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Ajout du style spécifique à la section "Liste des compétences" */
+.article h2 {
+  color: #f00; /* Rouge pour le titre de la section Liste des compétences */
+}
+
+/* Ajout du style pour le lien dans le texte de chaque article */
+.article-text a {
+  color: #0000ff; /* Bleu pour les liens dans le texte des articles */
+  text-decoration: underline;
+}
+
+/* Style pour les liens dans la liste des compétences */
+.article p a {
+  color: #00ff00; /* Vert pour les liens dans la liste des compétences */
+}
+
+/* Ajout du style pour le lien dans la section "Vie étudiante" */
+.article-content.reverse .article-text a {
+  color: #ffcc00; /* Jaune pour les liens dans la section Vie étudiante */
+}
+
 /* Style de la page contact */
 
 #contact {
