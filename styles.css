@@ -68,11 +68,11 @@ th.entete-special {
     text-align: center;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column; /* Ajustement à une colonne */
+    flex-direction: column;
 }
 
 .competence-details h2 {
-    margin-bottom: 10px; /* Espacement entre le titre et le contenu */
+    margin-bottom: 10px;
 }
 
 .resources-list {
@@ -80,7 +80,6 @@ th.entete-special {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /*Taille 70%*/
     width: 70%;
 }
 
@@ -95,14 +94,13 @@ th.entete-special {
     box-sizing: border-box;
     margin: 20px;
 }
-/*Content container flex direction gauche à droite : rajouté*/
+
 .content-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-
 .gauche /*direction de gauche à droite : rajouté*/
 {
     flex-direction: row;
