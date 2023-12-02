@@ -79,6 +79,55 @@ h1 {
   color: #333; /* Ajuste la couleur du titre en fonction de la maquette */
 }
 
+/* Style de la page index */
+
+.article-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-content img {
+  width: 200px; /* Ajuste la largeur de l'image selon tes besoins */
+  margin-right: 20px;
+}
+
+.article-text {
+  flex: 1;
+}
+
+/* Style supplémentaire pour la section "Vie étudiante" */
+.article-content.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Style supplémentaire pour la section "Vie étudiante" */
+.article-content.reverse img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Ajout du style spécifique à la section "Liste des compétences" */
+.article h2 {
+  color: #f00; /* Rouge pour le titre de la section Liste des compétences */
+}
+
+/* Ajout du style pour le lien dans le texte de chaque article */
+.article-text a {
+  color: #0000ff; /* Bleu pour les liens dans le texte des articles */
+  text-decoration: underline;
+}
+
+/* Style pour les liens dans la liste des compétences */
+.article p a {
+  color: #00ff00; /* Vert pour les liens dans la liste des compétences */
+}
+
+/* Ajout du style pour le lien dans la section "Vie étudiante" */
+.article-content.reverse .article-text a {
+  color: #ffcc00; /* Jaune pour les liens dans la section Vie étudiante */
+}
+
 /* Style de la page contact */
 
 #contact {
@@ -235,6 +284,123 @@ address {
   margin: 0;
 }
 
+/* Style de la page présentation */
+
+.bloc-vide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.contenu-bloc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.explication {
+  width: 45%;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.entete-special,
+th.entete-special {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .contenu-bloc {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .explication, table {
+      width: 100%;
+      margin: 0;
+  }
+}
+
+.competence-details {
+  flex-basis: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.competence-details h2 {
+  margin-bottom: 10px;
+}
+
+.resources-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.resource-item {
+  flex-basis: 30%;
+  border: 1px solid #ccc;
+  min-height: 60px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gauche /*direction de gauche à droite : rajouté*/
+{
+  flex-direction: row;
+}
+
+.droite /*direction de droite à gauche : rajouté*/
+{
+  flex-direction: row-reverse;
+}
+
+.competence-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*image largeur 30% : rajouté*/
+.image-block{
+  width: 30%;
+}
 
 /* Style du footer et de ces enfants */
 
