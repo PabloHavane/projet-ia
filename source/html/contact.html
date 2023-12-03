@@ -16,6 +16,7 @@
             <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="BUT Informatique Logo">
         </div>
     </div>
+    <button class="mobile-menu-button" onclick="toggleMobileMenu()">&#9776; Menu</button>
     <div class="navigation-menu">
         <nav>
             <ul>
@@ -25,11 +26,11 @@
                     <a href="#">Blocs de compétences</a>
                     <ul class="dropdown-content">
                         <li><a href="competence.html">Compétence 1</a></li>
-                        <li><a href="../competence2.html">Compétence 2</a></li>
-                        <li><a href="../competence3.html">Compétence 3</a></li>
-                        <li><a href="../competence4.html">Compétence 4</a></li>
-                        <li><a href="../competence5.html">Compétence 5</a></li>
-                        <li><a href="../competence6.html">Compétence 6</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -107,5 +108,14 @@
         <p>Charif Abdesselam</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      var navigationMenu = document.querySelector('.navigation-menu');
+      var buttonMenu = document.querySelector('.mobile-menu-button');
+      navigationMenu.classList.toggle('show');
+      buttonMenu.classList.toggle('button-color');
+    }
+  </script> 
 </body>
 </html>
