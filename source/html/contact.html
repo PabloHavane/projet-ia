@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Compétence</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -42,44 +42,43 @@
   <main>
       <section id="contact">
           <h2>Contactez-nous</h2>
+            <!-- Formulaire de contact -->
+            <form action="#" method="post" class="contact-form">
+                <div class="form-left">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+            
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+            
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="form-right">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+            
+                <button type="button" disabled>Envoyer</button>
+            </form>
+            
 
-          <!-- Formulaire de contact -->
-          <form action="#" method="post">
-              <label for="prenom">Prénom :</label>
-              <input type="text" id="prenom" name="prenom" required>
-
-              <label for="nom">Nom :</label>
-              <input type="text" id="nom" name="nom" required>
-
-              <label for="email">Adresse e-mail :</label>
-              <input type="email" id="email" name="email" required>
-
-              <label for="message">Message :</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-
-              <button type="button" disabled>Envoyer</button>
-          </form>
-
-          <!-- Partie renseignements -->
-          <div class="info-section">
-              <!-- Partie gauche : Photo de l'IUT -->
-              <div class="left-section">
-                  <img src="../../images/photo-iut.jpg" alt="IUT Photo">
-              </div>
-
-              <!-- Partie droite : Adresse et carte -->
-              <div class="right-section">
-                  <p>Adresse de l'IUT :</p>
-                  <address>
-                      Nom de l'IUT<br>
-                      Rue de l'IUT<br>
-                      Code postal, Ville
-                  </address>
-
-                  <img src="../../images/carte.png" alt="Carte de l'IUT">
-              </div>
-          </div>
-      </section>
+            <div class="info-section">
+                <!-- Partie gauche : Photo de l'IUT -->
+                <div class="left-section">
+                    <img src="../../images/photo-iut.jpg" width="600" height="450" style="border:0;" alt="IUT Photo">
+                </div>
+            
+                <!-- Partie droite : Adresse et carte -->
+                <div class="right-section">
+                    <h3>
+                        IUT Paul Sabatier <br> 115C Route de Narbonne <br> 31077 TOULOUSE CEDEX 4<br>
+                      </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.7321834682507!2d1.4623868148773762!3d43.57046336579599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc40791e610b%3A0x44186f8c0017dff1!2sIUT%20Paul%20Sabatier%20(site%20de%20Rangueil)!5e0!3m2!1sfr!2sfr!4v1668508821827!5m2!1sfr!2sfr" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
   </main> 
 
   <footer>

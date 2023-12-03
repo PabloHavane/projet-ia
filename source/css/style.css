@@ -107,21 +107,59 @@ h1 {
   margin-left: 20px;
 }
 
-/* Ajout du style spécifique à la section "Liste des compétences" */
-.article h2 {
-  color: #f00; /* Rouge pour le titre de la section Liste des compétences */
-}
-
 /* Ajout du style pour le lien dans le texte de chaque article */
 .article-text a {
   color: #0000ff; /* Bleu pour les liens dans le texte des articles */
   text-decoration: underline;
 }
-
-/* Style pour les liens dans la liste des compétences */
-.article p a {
-  color: #00ff00; /* Vert pour les liens dans la liste des compétences */
+/* Style pour chaque article */
+.article-content {
+  border-bottom: 1px solid #ddd; /* Ajoute une bordure basse entre chaque article */
+  padding-bottom: 20px; /* Espace en bas de chaque article */
 }
+
+/* Style pour la dernière bordure, pour éviter une bordure après le dernier article */
+.article-content:last-child {
+  border-bottom: none;
+}
+
+/* Style pour chaque compétence */
+.competence {
+  display: flex;
+  align-items: flex-start; /* Aligner les compétences en haut */
+  justify-content: space-between;
+  margin-bottom: 20px; /* Espace entre chaque compétence */
+}
+
+.competence-image {
+  max-width: 200px; /* Ajustez la largeur maximale de l'image selon vos besoins */
+}
+
+.competence-text {
+  flex: 1;
+  margin-left: 20px; /* Espace entre l'image et le texte */
+}
+
+.competence-text h1 {
+  color: #000; /* Couleur du texte en noir pour les titres forts (compétences) */
+  font-weight: bold; /* Gras pour les titres forts */
+  font-size: 1.2em; /* Taille du texte pour les titres forts */
+}
+
+.competence-text ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime le padding par défaut de la liste */
+  color: #555; /* Couleur du texte en gris foncé pour les éléments de la liste */
+}
+
+.competence-text li {
+  margin-top: 5px; /* Espace en haut de chaque élément de la liste */
+}
+
+
+
+/* Ajoutez d'autres styles spécifiques si nécessaire */
+
 
 /* Ajout du style pour le lien dans la section "Vie étudiante" */
 .article-content.reverse .article-text a {
@@ -130,32 +168,45 @@ h1 {
 
 /* Style de la page contact */
 
-#contact {
-  text-align: center;
-  margin-bottom: 40px;
+main {
+  border: 2px solid #ccc; /* Bordure autour de la section du formulaire */
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-form {
+.contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-label {
+.form-left,
+.form-right {
+  width: 100%;
+}
+
+.form-left,
+.form-right label {
+  display: block;
   margin-top: 10px;
 }
 
-input,
-textarea {
-  width: 100%;
+.form-left input,
+.form-right input,
+.form-right textarea {
+  width: calc(100% - 20px);
   padding: 10px;
   margin-top: 5px;
 }
 
+.form-right textarea {
+  resize: vertical;
+}
+
 button {
-  margin-top: 10px;
+  margin-top: 20px; /* Augmenter l'espace entre le formulaire et le bouton Envoyer */
   padding: 10px 20px;
-  background-color: #d9534f; /* Rouge IUT */
+  background-color: #d9534f;
   color: #fff;
   border: none;
   cursor: not-allowed;
@@ -164,21 +215,21 @@ button {
 .info-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  border: 2px solid #ccc; /* Bordure autour de la section des renseignements */
+  padding: 20px;
 }
 
-.left-section img {
+.left-section img,
+.right-section img {
   width: 100%;
+  border-radius: 8px; /* Ajout d'un peu de style avec des coins arrondis */
 }
 
 .right-section {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 20px; /* Ajout de marge à gauche pour séparer l'image de l'iframe */
 }
 
-address {
-  font-style: normal;
-}
 
 /* Style de la page compétence et responsive design */
 
