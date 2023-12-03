@@ -180,7 +180,193 @@ address {
   font-style: normal;
 }
 
-/* Style de la page compétence */
+/* Style de la page compétence et responsive design */
+
+.mobile-menu-button {
+  display: none; /* Masque le bouton sur les écrans non mobiles */
+}
+
+/* Pour les écrans de petite taille (jusqu'à 600px de largeur) */
+@media (max-width: 600px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-logos,
+  .right-logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: left;
+  }
+
+  /* Styles pour les écrans de 600 pixels et moins */
+  .navigation-menu {
+    display: none; /* Masque le menu sur les écrans non mobiles */
+  }
+
+  .mobile-menu-button {
+    display: block; /* Affiche le bouton sur les écrans mobiles */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-menu-button:hover + .navigation-menu,
+  .navigation-menu:hover {
+    display: block; /* Affiche le menu déroulant lorsqu'il est survolé */
+  }
+
+  .dropdown-content {
+    display: block; /* Affiche le menu déroulant sur les écrans mobiles */
+    position: relative; /* Assurez-vous que la position est relative */
+  }
+
+  .mobile-menu-button {
+    display: block; /* Affiche le bouton sur les écrans mobiles */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .button-color {
+    background-color: #d9534f; /* Rouge IUT */
+    color: #fff;
+    border: none;
+  }
+
+  .navigation-menu.show {
+    display: flex; /* Affiche le menu déroulant lorsqu'il est activé */
+  }
+
+  .navigation-menu {
+    display: none; /* Masque le menu sur les écrans mobiles par défaut */
+    flex-direction: column; /* Affiche les éléments en colonne pour les écrans mobiles */
+    width: 100%; /* Occupe la largeur totale de l'écran */
+    text-align: center; /* Centre les éléments pour les écrans mobiles */
+  }
+
+  .navigation-menu a {
+    display: block; /* Ajuste le style des liens pour occuper tout l'espace disponible */
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .image-container img {
+    margin-right: 0;
+    margin-bottom: 20px; /* Ajoute une marge en bas de l'image */
+  }
+
+  .learning-list li {
+    margin-bottom: 5px; /* Réduit la marge entre les éléments de la liste */
+  }
+
+  .resources-table td {
+    font-size: 14px; /* Réduit la taille de police dans le tableau */
+  }
+
+  .sae-table td {
+    font-size: 14px; /* Réduit la taille de police dans le tableau SAE */
+  }
+
+  .resource-apprentissages ul,
+  .resource-descriptif p {
+    font-size: 14px; /* Réduit la taille de police dans les sections des ressources */
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%; /* Occupent toute la largeur du footer */
+  }
+
+  .resource-item {
+    flex-basis: 100%; /* Occupent toute la largeur dans la liste des ressources */
+  }
+
+  .content-container {
+    flex-direction: column; /* Réorganise les contenus en colonne */
+  }
+
+  .competence-block {
+    gap: 10px; /* Réduit l'espace entre les blocs de compétence */
+  }
+
+  .image-block {
+    width: 100%; /* Occupe toute la largeur dans les blocs de compétence */
+  }
+}
+
+/* Pour les écrans de taille moyenne (601px à 1024px de largeur) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo-container {
+    flex-direction: row-reverse; /* Inverse la direction des logos */
+  }
+
+  .left-logos,
+  .right-logo {
+    margin-bottom: 0;
+  }
+
+  .navigation-menu {
+    margin-top: 0;
+  }
+
+  .image-container img {
+    max-width: 70%; /* Ajuste la largeur de l'image */
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .resources-table td {
+    font-size: 16px; /* Rétablit la taille de police par défaut dans le tableau */
+  }
+
+  .sae-table td {
+    font-size: 16px; /* Rétablit la taille de police par défaut dans le tableau SAE */
+  }
+
+  .resource-apprentissages ul,
+  .resource-descriptif p {
+    font-size: 16px; /* Rétablit la taille de police par défaut dans les sections des ressources */
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 33.33%; /* Occupe le tiers de la largeur du footer */
+  }
+
+  .resource-item {
+    flex-basis: 48%; /* Occupe environ la moitié de la largeur dans la liste des ressources */
+  }
+}
+
+/* Pour les écrans de grande taille (1025px et plus de largeur) */
+@media (min-width: 1025px) {
+  .logo-container {
+    flex-direction: row; /* Rétablit la direction normale des logos */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Ajuste la largeur de l'image à 100% */
+  }
+
+  .resource-item {
+    flex-basis: 30%; /* Occupe environ 30% de la largeur dans la liste des ressources */
+  }
+}
 
 /* Ajoute ce style pour aligner les éléments de manière horizontale */
 .content-wrapper {

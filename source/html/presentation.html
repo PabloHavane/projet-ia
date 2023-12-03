@@ -18,6 +18,7 @@
                 <img src="../../images/logo-IUT-UT3-carre2019.jpg" alt="BUT Informatique Logo">
             </div>
         </div>
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()">&#9776; Menu</button>
         <div class="navigation-menu">
             <nav>
                 <ul>
@@ -398,5 +399,13 @@
         </div>
       </footer>
 
+      <script>
+        function toggleMobileMenu() {
+          var navigationMenu = document.querySelector('.navigation-menu');
+          var buttonMenu = document.querySelector('.mobile-menu-button');
+          navigationMenu.classList.toggle('show');
+          buttonMenu.classList.toggle('button-color');
+        }
+      </script> 
 </body>
 </html>
